@@ -1,31 +1,31 @@
-<html>
-  <head>
-    <title>
-      blue box with css
-    </title>
-    <style>
-      .blue-box {
-        position : absolute ;
-        width : 80vw ;
-        height : 300px ;
-        background : #2196f3 ;
-        top : 0 ;
-        left : 0 ;
-        transform : translate(-50% , -50%) ;
-        display : flex ;
-        align-items : center ;
-        justify-content : center ;
-        text-align : center ;
-        box-shadow : 0 0 5px rgba(0,0,0,0.5) ;
-        border : 0 ;
-        border-radius : 30px ;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="QRscript.js" defer></script>
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>
+                QR Code Generator
+            </h1>
+            <span class="headerTxt">
+                paste a url or enter text to create QR 
+            </span>
+        </header>
+            <div class="form">
+                <input type="text" placeholder="Enter text or Url" name="" id="">
+                <button class="actionBTN">Generate QR Code</button>
+            </div>
         
-      }
-    </style>
-  </head>
-  <body>
-    <div class="blue-box">
-      update info Box After update with little bot of css
+        <div class="qr-code">
+            <img src="randomqr-256.png" alt="qr-code">
+        </div>
     </div>
-  </body>
+</body>
 </html>
